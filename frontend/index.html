@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nova — AI Chat Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Nova</h1>
+      <select id="langSelect" title="Choose display language">
+        <option value="auto">Auto-detect (respond in same language)</option>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="te">Telugu</option>
+        <option value="ta">Tamil</option>
+        <option value="kn">Kannada</option>
+      </select>
+    </header>
+
+    <main id="chat">
+      <div class="message system">Hi — I am Nova. Ask me anything.</div>
+    </main>
+
+    <form id="inputForm">
+      <input id="messageInput" autocomplete="off" placeholder="Type your message..." />
+      <button type="submit">Send</button>
+    </form>
+
+    <footer>Nova — Demo AI assistant (uses your OpenAI API on the backend)</footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
